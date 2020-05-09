@@ -67,14 +67,14 @@
     "vmStorageAccountType": "Standard_GRS",
     "vmStorageAccountName": "[concat(uniqueString(resourceGroup().id),'storage')]",
     "diagStorageAccountName": "[concat(uniqueString(resourceGroup().id),'diagstorage')]",
-    "virtualNetworkName": "RedHat3Tier-vnet",
-    "webTierSubnetName": "web-tier-subnet",
-    "appTierSubnetName": "app-tier-subnet",
-    "databaseTierSubnetName": "database-tier-subnet",
+    "virtualNetworkName": "prod-vnet",
+    "webTierSubnetName": "web-subnet",
+    "appTierSubnetName": "app-subnet",
+    "databaseTierSubnetName": "database-subnet",
     "jumpSubnetName": "jump-subnet",
-    "webNSGName": "web-tier-nsg",
-    "appNSGName": "app-tier-nsg",
-    "databaseNSGName": "database-tier-nsg",
+    "webNSGName": "web-nsg",
+    "appNSGName": "app-nsg",
+    "databaseNSGName": "database-nsg",
     "jumpNSGName": "jump-nsg",
     "webLoadBalancerName": "web-lb",
     "weblbIPAddressName": "web-lb-pip",
@@ -98,9 +98,9 @@
     "redHatsku": "7.3",
     "Publisher": "RedHat",
     "Offer": "RHEL",
-    "webTierVmName": "web-tier-vm",
-    "appTierVmName": "app-tier-vm",
-    "databaseTierVmName": "database-tier-vm",
+    "webTierVmName": "web-vm",
+    "appTierVmName": "app-vm",
+    "databaseTierVmName": "database-vm",
     "jumpVmName": "jump-vm",
     "redHatTags": {
       "type": "object",
@@ -108,7 +108,7 @@
     },
     "quickstartTags": {
       "type": "object",
-      "name": "rhel-3tier-iaas"
+      "name": "Production"
     },
     "linuxConfiguration": {
       "disablePasswordAuthentication": true,
